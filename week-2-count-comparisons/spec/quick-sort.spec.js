@@ -1,7 +1,7 @@
 'use strict';
 
 var sorter = require('../lib/quick-sort'),
-  readInput = require('../../../utils/integer-file-reader');
+  readInput = require('../../utils/integer-file-reader');
 
 describe('Quick sort comparison counter', function() {
   describe('should sort correctly regular arrays', function(){

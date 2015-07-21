@@ -1,6 +1,6 @@
 'use strict';
 
-var readInput = require('../../../utils/integer-file-reader'),
+var readInput = require('../../utils/integer-file-reader'),
   sorter = require('./quick-sort'),
   pivotType = process.argv[2] || 'FIRST_ITEM',
   inputArr = readInput(__dirname + '/QuickSort.txt');

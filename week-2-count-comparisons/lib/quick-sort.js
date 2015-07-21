@@ -1,11 +1,11 @@
 'use strict';
 
-var swap = require('../../../utils/swap'),
+var swap = require('../../utils/swap'),
     medianSwap = require('./median-swap');
 
-function QuickSorter (arr, pivotType) {
-  var arr = arr,
-    pivotType = pivotType,
+function QuickSorter (unsortedArr, pivot) {
+  var arr = unsortedArr,
+    pivotType = pivot,
     comparisons = 0;
 
   var sort = function(leftIndex, rightIndex) {

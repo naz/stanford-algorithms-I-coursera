@@ -1,6 +1,6 @@
 'use strict';
 
-var swap = require('../../../utils/swap');
+var swap = require('../../utils/swap');
 
 var medianSwap = function(arr, leftIndex, rightIndex) {
   var middleIndex = leftIndex + Math.floor((rightIndex - leftIndex) / 2);

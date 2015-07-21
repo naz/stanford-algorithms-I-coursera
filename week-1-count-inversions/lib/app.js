@@ -1,4 +1,4 @@
-var readInput = require('../../../utils/integer-file-reader'),
+var readInput = require('../../utils/integer-file-reader'),
   inversionCounter = require('./count-inversions');
 
 var inputArr = readInput('IntegerArray.txt');
