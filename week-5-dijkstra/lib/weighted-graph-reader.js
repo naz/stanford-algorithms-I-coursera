@@ -1,19 +1,18 @@
 var fs = require('fs');
 
 var readFromFile = function(path) {
-  var vertexRows = fs.readFileSync(path).toString().trim().split('\n');
+  var vertexRows = fs.readFileSync(path).toString().trim().split(/\r?\n/);
   var weightedAdjList = {};
 
   for (var i = 0; i < vertexRows.length; i++) {
-    var tokens = vertexRows[i].split(' ');
+    var tokens = vertexRows[i].split('\t');
     var vertexKey = tokens[0];
-    var vertexEdges = [];
+    var vertexEdges = {};
     for (var j = 1; j < tokens.length; j++) {
       var edge = tokens[j].split(',');
-      vertexEdges.push({
-        vertex: parseInt(edge[0]),
-        weight: parseInt(edge[1])
-      });
+      if (edge[0]) {
+        vertexEdges[edge[0]] = parseInt(edge[1]);
+      }
     }
 
     weightedAdjList[vertexKey] = vertexEdges;
