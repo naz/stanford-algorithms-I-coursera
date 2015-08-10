@@ -29,8 +29,6 @@ describe('DFS with magic order', function() {
 
     var result = new DFS(graph, magicOrder).run();
 
-    expect(result).toEqual({
-      ids : [ 3, 3, 3 ]
-    });
+    expect(result).toEqual([ 3, 3, 3 ]);
   });
 });
