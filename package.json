@@ -1,0 +1,35 @@
+{
+  "name": "coursera-algorithms",
+  "version": "1.0.0",
+  "description": "Coursera Stanford Algorithms Part I Programming Assignments",
+  "main": "app.js",
+  "dependencies": {
+    "jasmine-node": "^1.14.5",
+    "heap": "^0.2.6",
+    "lodash": "^3.10.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jasmine-node */**/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gargol/stanford-algorithms-I-coursera.git"
+  },
+  "keywords": [
+    "algorithms",
+    "stanford",
+    "coursera",
+    "heap",
+    "dajkstra",
+    "min-cut",
+    "graphs",
+    "sorting"
+  ],
+  "author": "Nazar Gargol",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gargol/stanford-algorithms-I-coursera/issues"
+  },
+  "homepage": "https://github.com/Gargol/stanford-algorithms-I-coursera#readme"
+}

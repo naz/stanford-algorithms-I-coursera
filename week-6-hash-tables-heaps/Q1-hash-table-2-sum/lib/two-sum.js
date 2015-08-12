@@ -16,11 +16,9 @@ var computeTwoSum = function(hash, target){
   console.log('Computing two sum for target: ' + target);
   var twoSumCount = 0;
   for (var key in hash) {
-    //console.log('processing key: ' + key);
     var expectedKey = target - parseInt(key);
     if (expectedKey < parseInt(key)) continue;
     if (hash[expectedKey]) {
-      //console.log('two sum:' + hash[expectedKey]);
       twoSumCount += hash[expectedKey];
     }
   }
